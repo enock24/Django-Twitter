@@ -1,50 +1,77 @@
-# Django Twitter Clone by Redian Marku
+# Django-Twitter
+## Author
+- Towett Enock K
+### Description  
+This is a automatic twitter where people share their  images and tweets for other users to view. 
+Users can sign up, login, view and post photos, search and follow other users.  
+### User Story  
 
-Fully functional Django App that looks ecxatly like real Twitter.
+* Sign in to the application to start using.  
+* Upload a pictures to the application. 
+* Search for different users using their usernames.  
+* See your profile with all your pictures.  
+* Follow other users and see their pictures on my timeline.  
 
-Demo Image:
-![](TwitterDemo.png)
 
-## Setup
+### Setup and Installation  
+To get the project .......  
 
-1. Git Clone the project with: ```git clone https://github.com/redianmarku/Django-Twitter-Clone.git```.
+##### Cloning the repository:  
+ ```bash 
 
-2. Move to the base directory: ```cd Django-Twitter-Clone```
+```
+##### Navigate into the folder and install requirements  
+ ```bash 
+cd instagram pip install -r requirements.txt 
+```
+##### Install and activate Virtual  
+ ```bash 
+- python3 -m venv virtual - source virtual/bin/activate  
+```  
+##### Install Dependencies  
+ ```bash 
+ pip install -r requirements.txt 
+```  
+ ##### Setup Database  
+  SetUp your database User,Password, Host then make migrate  
+ ```bash 
+python manage.py makemigrations tweeter
+ ``` 
+ Now Migrate  
+ ```bash 
+ python manage.py migrate 
+```
+##### Run the application  
+ ```bash 
+ python manage.py runserver 
+``` 
+##### Running the application  
+ ```bash 
+ python manage.py server 
+```
+##### Testing the application  
+ ```bash 
+ python manage.py test 
+```
+Open the application on your browser `127.0.0.1:8000`.  
 
-3. Create a new python enveronment with: ```python -m venv env```.
 
-4. Activate enveronment with: ```env\Scripts\activate``` on windows, or ```source env/bin/activate``` on Mac and Linux.
+## Technology used  
 
-5. Install required dependences with: ```pip install -r requirements.txt```.
+* Python3.8  
+* Django 3.1.5 
+* Heroku  
 
-6. Make migrations with: ```python manage.py makemigrations``` and then ```python manage.py migrate```.
 
-7. Run app localy with: ```python manage.py runserver```.
 
-## License
-MIT License
+## Known Bugs  
+* There are no known bugs currently but pull requests are allowed incase you spot a bug  
 
-Copyright (c) 2020 Redian Marku
+## Contact Information   
+If you have any question or contributions, please email me at [enookimuu@gmail.com]  
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Database
+<img src="db/diagram.png">
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-Please Subscribe my YouTube Channel: <a href="https://www.youtube.com/channel/UCO5WiowKFnEw17AOk008WOQ" target="_blank">Top Notch Programmer</a>.
-
-# Donate
-[![paypal](https://mk0mightycausebxdggx.kinstacdn.com/wp-content/uploads/2019/06/paypal-donate-button-high-quality-png.png)](https://www.paypal.me/redidev)
+## license
+licensed under[MIT license](license).
